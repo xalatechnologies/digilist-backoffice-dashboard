@@ -1,0 +1,6 @@
+{
+  "primary": "blue",
+  "secondary": "slate",
+  "neutral": "slate",
+  "_note": "Actual primary color is custom hex #33649E. See design-tokens.md for full token definitions."
+}

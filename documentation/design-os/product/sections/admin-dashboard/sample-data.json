@@ -1,0 +1,122 @@
+{
+  "kpis": {
+    "awaiting_handling": {
+      "count": 29,
+      "label": "Avventer behandling",
+      "description": "Forespørsler og søknader",
+      "route": "/admin/bookings?status=awaiting"
+    },
+    "new_today": {
+      "count": 2,
+      "label": "Nye i dag",
+      "description": "Mottatt siste 24 timer",
+      "route": "/admin/bookings?filter=new_today"
+    },
+    "upcoming_bookings": {
+      "count": 6,
+      "label": "Kommende bookinger",
+      "description": "Neste 7 dager",
+      "route": "/admin/bookings?filter=upcoming"
+    },
+    "integration_issues": {
+      "count": 1,
+      "label": "Integrasjonsavvik",
+      "description": "Krever oppfølging",
+      "route": "/admin/integrations?filter=issues"
+    }
+  },
+  "requires_handling": [
+    {
+      "id": "rh_001",
+      "type": "Endring",
+      "listing": "Kulturhuset Scene",
+      "applicant": "Oslo Kulturklubb",
+      "starts_at": "2026-01-16T13:00:00+01:00",
+      "status": "Ny",
+      "deadline": "2026-01-16T18:34:00+01:00",
+      "route": "/admin/bookings/rh_001"
+    },
+    {
+      "id": "rh_002",
+      "type": "Forespørsel",
+      "listing": "Møterom Fjord",
+      "applicant": "Korpsforeningen",
+      "starts_at": "2026-01-20T11:00:00+01:00",
+      "status": "Ny",
+      "deadline": "2026-01-16T09:43:00+01:00",
+      "route": "/admin/bookings/rh_002"
+    },
+    {
+      "id": "rh_003",
+      "type": "Endring",
+      "listing": "Storhall A",
+      "applicant": "Dansestudio Nord",
+      "starts_at": "2026-01-20T18:00:00+01:00",
+      "status": "Under behandling",
+      "deadline": "2026-01-15T13:00:00+01:00",
+      "route": "/admin/bookings/rh_003"
+    },
+    {
+      "id": "rh_004",
+      "type": "Endring",
+      "listing": "Kulturhuset Scene",
+      "applicant": "Turn og Idrett AS",
+      "starts_at": "2026-01-17T12:00:00+01:00",
+      "status": "Venter info",
+      "deadline": "2026-01-14T17:35:00+01:00",
+      "route": "/admin/bookings/rh_004"
+    },
+    {
+      "id": "rh_005",
+      "type": "Forespørsel",
+      "listing": "Aktivitetssalen",
+      "applicant": "Turn og Idrett AS",
+      "starts_at": "2026-01-18T11:00:00+01:00",
+      "status": "Under behandling",
+      "deadline": "2026-01-14T14:10:00+01:00",
+      "route": "/admin/bookings/rh_005"
+    }
+  ],
+  "recent_events": [
+    {
+      "id": "ev_001",
+      "type": "Endret",
+      "subject": "Kurs - Dansestudio",
+      "actor": "Kari Nordmann",
+      "time": "10:45",
+      "route": "/admin/bookings/ev_001"
+    },
+    {
+      "id": "ev_002",
+      "type": "Avslått",
+      "subject": "Turnering - Turn og Idrett",
+      "actor": "Kari Nordmann",
+      "time": "09:45",
+      "route": "/admin/bookings/ev_002"
+    },
+    {
+      "id": "ev_003",
+      "type": "Godkjent",
+      "subject": "Trening - Fjord IL",
+      "actor": "Per Nilsen",
+      "time": "08:45",
+      "route": "/admin/bookings/ev_003"
+    },
+    {
+      "id": "ev_004",
+      "type": "Arkiv sendt",
+      "subject": "Turnering - Turn og Idrett",
+      "actor": "Per Nilsen",
+      "time": "01:45",
+      "route": "/admin/bookings/ev_004"
+    },
+    {
+      "id": "ev_005",
+      "type": "Avslått",
+      "subject": "Kurs - Dansestudio",
+      "actor": "Ola Hansen",
+      "time": "16:45",
+      "route": "/admin/bookings/ev_005"
+    }
+  ]
+}
